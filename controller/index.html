@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>piCon</title>
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <style>
+  #right { background-color: red}
+  #left { background-color: blue }
+
+  .div-button {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+  }
+  .div-button:hover {
+    background-color: gray!important;
+  }
+  </style>
+
+  <div class="div-button" id="left"></div>
+  <div class="div-button" id="right"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
+  <script src="controller.js"></script>
+
+</body>
+</html>
