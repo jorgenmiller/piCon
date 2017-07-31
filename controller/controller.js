@@ -1,4 +1,4 @@
-var socket = io.connect("ws://192.168.1.167:5000");
+var socket = io.connect("ws://localhost:5000");
 
 socket.on('connect', function() {
   socket.emit('message', 'Client connected')
