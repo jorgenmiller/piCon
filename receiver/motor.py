@@ -15,9 +15,9 @@ def handle_message(message):
     print('received message: ' + message)
 
 @socketio.on('button')
-def handle_controller_move(arg1):
+def handle_button(arg1):
     print('received args: ' + arg1)
-    BrickPi.MotorSpeed[PORT_A] = str(arg1)
+    BrickPi.MotorSpeed[PORT_A] = int(arg1)
     BrickPiUpdateValues()
 
 if __name__ == '__main__':
