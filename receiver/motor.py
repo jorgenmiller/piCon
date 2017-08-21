@@ -3,7 +3,7 @@ from flask_socketio import SocketIO
 from BrickPi import *
 
 BrickPiSetup()
-BrickPi.MotorEnable[Port_A] = 1
+BrickPi.MotorEnable[PORT_A] = 1
 
 
 
