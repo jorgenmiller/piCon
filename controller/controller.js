@@ -1,12 +1,15 @@
-var socket = io.connect("ws://localhost:5000");
+//var ipaddr = document.getElementById('rec-id').innerHTML
+//var socket = io.connect( ipaddr );
 
-socket.on('connect', function() {
-  socket.emit('message', 'Client connected')
+var socket = io.connect("10.0.0.43:5000")
+
+socket.on("connect", function() {
+  socket.emit("message", "Client connected")
 });
 
-document.getElementById('right').addEventListener('click',function(){
-  socket.emit('controller move', "right");
+document.getElementById("right").addEventListener("click",function(){
+  socket.emit("button", "255");
 })
-document.getElementById('left').addEventListener('click',function(){
-  socket.emit('controller move', "left");
+document.getElementById("left").addEventListener("click",function(){
+  socket.emit("button", "-255");
 })
