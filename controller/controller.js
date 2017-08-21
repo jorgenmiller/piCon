@@ -1,7 +1,7 @@
 //var ipaddr = document.getElementById('rec-id').innerHTML
 //var socket = io.connect( ipaddr );
 
-var socket = io.connect("10.0.0.43:5000")
+var socket = io.connect("10.0.0.220:5000")
 
 socket.on("connect", function() {
   socket.emit("message", "Client connected")
