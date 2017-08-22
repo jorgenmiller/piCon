@@ -8,8 +8,8 @@ socket.on("connect", function() {
 });
 
 document.getElementById("right").addEventListener("click",function(){
-  socket.emit("button", "255");
+  socket.emit("button", "motor A", "255");
 })
 document.getElementById("left").addEventListener("click",function(){
-  socket.emit("button", "-255");
+  socket.emit("button", "motor A", "-255");
 })
