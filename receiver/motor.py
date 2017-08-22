@@ -19,6 +19,7 @@ def handle_button(arg1):
     print('received args: ' + arg1)
     BrickPi.MotorSpeed[PORT_A] = int(arg1)
     BrickPiUpdateValues()
+    BrickPiUpdateValues()
 
 if __name__ == '__main__':
     socketio.run(app,host= '0.0.0.0')
