@@ -11,5 +11,5 @@ document.getElementById("right").addEventListener("click",function(){
   socket.emit("button", "motor A", "255");
 })
 document.getElementById("left").addEventListener("click",function(){
-  socket.emit("button", "motor A", "-255");
+  socket.emit("button", "motor B", "255");
 })

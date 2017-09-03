@@ -17,15 +17,14 @@ def handle_message(message):
 
 @socketio.on("button")
 def handle_button(arg1, arg2):
-    print(str(arg1) + ": " + str(arg2))
     if arg1 == "motor A":
-        BrickPi.MotorSpeed[PORT_A] = int(arg2)
+        print "Motor A: " + str(arg2)
     elif arg1 == "motor B":
-            BrickPi.MotorSpeed[PORT_B] = int(arg2)
+        print "Motor B: " + str(arg2)
     elif arg1 == "motor C":
-            BrickPi.MotorSpeed[PORT_C] = int(arg2)
+        print "Motor C: " + str(arg2)
     elif arg1 == "motor D":
-            BrickPi.MotorSpeed[PORT_D] = int(arg2)
+        print "Motor D: " + str(arg2)
     BrickPiUpdateValues()
     BrickPiUpdateValues()
 
